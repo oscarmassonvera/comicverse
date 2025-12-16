@@ -11,7 +11,7 @@
     "test": "ng test",
     "serve:ssr:comicverse": "node dist/comicverse/server/server.mjs",
     "predeploy": "ng build --base-href /comicverse/",
-    "deploy": "gh-pages -d dist/comicverse"
+    "deploy": "gh-pages -b gh-pages -d dist/comicverse"
   },
   "prettier": {
     "overrides": [
