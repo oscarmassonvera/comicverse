@@ -1,37 +1,36 @@
-<section class="hero">
-  <div class="overlay"></div>
+<!-- HERO -->
+<section class="hero position-relative d-flex align-items-center justify-content-center text-center">
+  <div class="overlay position-absolute w-100 h-100"></div>
 
-  <div class="hero-content">
-    <h1>ComicVerse</h1>
-    <p>
+  <div class="hero-content position-relative text-light px-3">
+    <h1 class="display-1 fw-bold text-uppercase mb-3">ComicVerse</h1>
+    <p class="lead mb-4">
       Historias oscuras. Héroes rotos.
       Opiniones sin censura sobre el lado más crudo del cómic.
     </p>
-
-    <button class="btn-blog" routerLink="/pagina">
-      Leer blog del día
-    </button>
+    <a class="btn btn-outline-danger btn-lg" routerLink="/pagina">Leer blog del día</a>
   </div>
 </section>
 
-<section class="featured">
-  <h2>📜 Blog del Día</h2>
+<!-- BLOG DEL DÍA -->
+<section class="featured py-5 bg-dark text-light">
+  <div class="container">
+    <h2 class="text-center mb-5">📜 Blog del Día</h2>
 
-  <div class="comic-grid">
-    <div class="comic-card">
-      <img [src]="'assets/hero-comics.jpg'" alt="Blog del día">
-      <div class="card-content">
-        <h3>Punisher: Justicia sin Redención</h3>
-
-        <p>
-          Frank Castle no busca perdón.
-          Este cómic es una carta de odio a la corrupción,
-          la guerra y la hipocresía del sistema.
-        </p>
-
-        <button class="btn-blog" routerLink="/pagina">
-          Leer análisis completo
-        </button>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card comic-card bg-secondary text-light h-100 shadow-lg">
+          <img [src]="'assets/hero-comics.jpg'" class="card-img-top" alt="Blog del día">
+          <div class="card-body">
+            <h3 class="card-title text-danger text-uppercase">Punisher: Justicia sin Redención</h3>
+            <p class="card-text">
+              Frank Castle no busca perdón.
+              Este cómic es una carta de odio a la corrupción,
+              la guerra y la hipocresía del sistema.
+            </p>
+            <a class="btn btn-outline-danger mt-3" routerLink="/pagina">Leer análisis completo</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,19 +1,14 @@
-<section class="post-hero">
-  <div class="post-hero-content">
-    <h1>El código del castigo</h1>
-    <p class="post-meta">
-      15 de diciembre · ComicVerse
-    </p>
+<!-- POST HERO -->
+<section class="post-hero text-center py-5 bg-dark text-light">
+  <div class="post-hero-content container">
+    <h1 class="display-4 fw-bold mb-2">El código del castigo</h1>
+    <p class="post-meta mb-0">15 de diciembre · ComicVerse</p>
   </div>
 </section>
 
-<section class="post-content">
-
-  <img
-    [src]="'assets/001.jpg'"
-    alt="Punisher"
-    class="post-image"
-  />
+<!-- POST CONTENT -->
+<section class="post-content container my-5">
+  <img [src]="'assets/001.jpg'" alt="Punisher" class="img-fluid rounded mb-4 post-image">
 
   <p>
     En los rincones más oscuros del mundo, donde la justicia dejó de existir,
@@ -26,14 +21,14 @@
     este relato explora la delgada línea entre la venganza y la justicia.
   </p>
 
-  <h2>Un mundo sin misericordia</h2>
+  <h2 class="mt-5">Un mundo sin misericordia</h2>
 
   <p>
     Las ciudades han caído, los reyes mienten y los inocentes pagan el precio.
     En este caos, el castigo no pide permiso, actúa.
   </p>
 
-  <blockquote>
+  <blockquote class="border-start border-4 border-danger ps-3 fst-italic text-secondary my-4">
     “Cuando la ley falla, el castigo no duda.”
   </blockquote>
 
@@ -42,8 +37,5 @@
     puede llegar un hombre cuando el sistema ya no protege a nadie.
   </p>
 
+  <a class="btn btn-outline-danger d-block mx-auto mt-4" routerLink="/">⬅ Volver al inicio</a>
 </section>
-
-<button class="btn-home" routerLink="/">
-  ⬅ Volver al inicio
-</button>
